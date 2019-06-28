@@ -1,0 +1,8 @@
+/*--------------------------
+    Watch Trailer Area
+---------------------------*/
+.watch-movie-trailer.watch-trailer-bg {
+  background-image: url(../img/bg/movie-trailer-bg.jpg);
+  background-color: #000;
+  background-position: center;
+  background-size: cover; }

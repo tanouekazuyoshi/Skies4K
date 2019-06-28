@@ -1,0 +1,67 @@
+/*----------------------
+    Footer Area
+-----------------------*/
+.footer-area{
+    .footer-top{
+        background-color: #1f1d3a;
+        text-align: center;
+        padding: 115px 0 115px 0;
+        .footer-logo{
+            margin-bottom: 58px;
+            display: block;
+        }
+        .subscribe-form{
+            position: relative;
+            .form-group{
+                .form-control{
+                    height: 60px;
+                    background-color: #2a2944;
+                    border: none;
+                    padding: 0 30px;
+                    color: rgba($white,.8);
+                }
+            }
+            .submit-btn{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 180px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                height: 60px;
+                background-image: -moz-linear-gradient( 50deg, rgb(174,63,107) 0%, rgb(212,120,124) 55%, rgb(249,177,140) 100%);
+                background-image: -webkit-linear-gradient( 50deg, rgb(174,63,107) 0%, rgb(212,120,124) 55%, rgb(249,177,140) 100%);
+                background-image: -ms-linear-gradient( 50deg, rgb(174,63,107) 0%, rgb(212,120,124) 55%, rgb(249,177,140) 100%);
+                @include transition($transition);
+                &:hover{
+                    opacity: .8;
+                }
+            }
+        }
+        .social-icons{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-top: 25px;
+            li{
+                display: inline-block;
+                margin: 0 10px;
+                a{
+                    display: block;
+                    color: rgba($white,.5);
+                    @include transition($transition);
+                    &:hover{
+                        color: $base-color;
+                    }
+                }
+            }
+        }
+    }
+    .copyright-area{
+        padding: 25px 0;
+        background-color: #101830;
+        text-align: center;
+        color: rgba($white,.6);
+        font-size: 14px;
+    }
+}

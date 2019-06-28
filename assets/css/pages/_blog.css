@@ -1,0 +1,9 @@
+/*-------------------------
+    Blog Page Area
+-------------------------*/
+.single-blog-item .post-meta {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .single-blog-item .post-meta li {
+    display: inline-block; }

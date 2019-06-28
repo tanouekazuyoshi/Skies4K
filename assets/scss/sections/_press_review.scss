@@ -1,0 +1,104 @@
+/*---------------------------
+    Press Review Area
+----------------------------*/
+.press-review-area{
+    padding: 110px 0 120px 0;
+    .section-title{
+        margin-bottom: 52px;
+    }
+    .press-review-slider-nav-area{
+        position: relative;
+        height: 100%;
+        display: inline-block;
+        float: right;
+        margin-right: 45px;
+        .press-review-slider-nav-inner{
+            div{
+                position: absolute;
+                right: 0;
+                top: 50%;
+                height: 100%;
+                @include transform(translateY(-50%));
+                width: 40px;
+                height: 50px;
+                background-color: #1c243b;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 2px;
+                @include transition($transition);
+                cursor: pointer;
+                color: $white;
+                font-size: 18px;
+                margin: 0 2px;
+                margin-top:  -25px;  
+                &.owl-next{
+                    left: 0;
+                    right: auto;
+                }
+                &:hover{
+                    background-image: -moz-linear-gradient( 50deg, rgb(174,63,107) 0%, rgb(212,120,124) 55%, rgb(249,177,140) 100%);
+                    background-image: -webkit-linear-gradient( 50deg, rgb(174,63,107) 0%, rgb(212,120,124) 55%, rgb(249,177,140) 100%);
+                    background-image: -ms-linear-gradient( 50deg, rgb(174,63,107) 0%, rgb(212,120,124) 55%, rgb(249,177,140) 100%);
+                }
+            }
+        }
+    }
+    .press-review-carousel{
+        .single-carousel-item{
+            padding: 50px 50px 50px 50px;
+            position: relative;
+            margin-top: 50px;
+            &:after{}
+            &:before{}
+            background-image: -moz-linear-gradient( 50deg, rgba(174,63,107,.1) 0%, rgba(212,120,124,.1) 55%, rgba(249,177,140,.1) 100%);
+            background-image: -webkit-linear-gradient( 50deg, rgba(174,63,107,.1) 0%, rgba(212,120,124,.1) 55%, rgba(249,177,140,.1) 100%);
+            background-image: -ms-linear-gradient( 50deg, rgba(174,63,107,.1) 0%, rgba(212,120,124,.1) 55%, rgba(249,177,140,.1) 100%);
+            .top-content{
+                display: flex;
+                align-self: flex-start;
+                margin-top: -100px;
+                margin-bottom: 45px;
+                .thumb{
+                    img{
+                        width: 120px;
+                    }
+                }
+                .content{
+                    flex: 1;
+                    position: relative;
+                    margin-left: 30px;
+                    .content-inner{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        .name{
+                            font-size: 19px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            color: rgba($white,.9);
+                            font-family: $body-font;
+                            letter-spacing: 1px;
+                        }
+                        .designation{
+                            font-size: 16px;
+                            font-weight: 400;
+                            color:$base-color;
+                        }
+                    }
+                }
+            }
+            .bottom-content{
+                p{
+                    font-size: 26px;
+                    line-height: 36px;
+                    font-style: italic;
+                    @include text-gradient($left,$right);
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

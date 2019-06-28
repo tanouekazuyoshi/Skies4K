@@ -1,0 +1,80 @@
+/*----------------------
+    About Page
+-----------------------*/
+.about-us-area{
+    padding: 120px 0 ;
+    .left-content-area{
+        .img-thumb{
+            position: relative;
+            .hover{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .video-play-btn{
+                    color: $base-color;
+                }
+            }
+        }
+    }
+    .right-content-area{
+        .title{
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: 500;
+            color: $white;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            color: rgba($white,.8);
+        }
+        .movie-info-list{
+            li{
+                .title{
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: rgba($white,.8);
+                }
+            }
+        }
+    }
+}
+.movie-info-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        display: block;
+        margin: 15px 0;
+        font-weight: 500;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .title{
+            color: $white;
+            padding-right: 50px;
+            text-transform: uppercase;
+            position: relative;
+            font-size: 16px;
+            &:after{
+                position: absolute;
+                right: 15px;
+                top: 11px;
+                background-color: #ae3f6b;
+                width: 10px;
+                height: 2px;
+                content: '';
+            }
+        }
+        .details{
+            color: $base-color;
+        }
+    }
+}

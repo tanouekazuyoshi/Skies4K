@@ -1,0 +1,62 @@
+/*-------------------------
+    Blog Page Area
+-------------------------*/
+.blog-content-area{
+    padding: 120px 0 105px 0;
+}
+.single-blog-item{
+    .thumb{}
+    .content{
+        padding: 25px 0px 25px 0px;
+    }
+    .title{
+        font-size: 24px;
+        font-family: $body-font;
+        color: rgba($white,.8);
+        margin-bottom: 25px;
+        a{
+            color: rgba($white,.8);
+            @include transition($transition);
+            &:hover{
+                color: $base-color;
+            }
+        }
+    }
+    .post-meta{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        li{
+            display: inline-block;
+            color: rgba($white,.5);
+            margin: 0 8px;
+            font-size: 14px;
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            a{
+                color: rgba($white,.8);
+                @include transition($transition);
+                &:hover{
+                    color: $base-color;
+                }
+            }
+        }
+    }
+    p{
+        font-size: 16px;
+        line-height: 26px;
+        color: rgba($white,.5);
+    }
+    .readmore{
+        color: rgba($white,.5);
+        @include transition($transition);
+        &:hover{
+            color: $base-color;
+        }
+    }
+}

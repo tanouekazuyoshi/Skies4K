@@ -1,0 +1,18 @@
+/*-----------------------
+    Brands Area
+------------------------*/
+.brand-area.brand-area-bg {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/bg/brand-area-bg.jpg);
+  z-index: 0; }
+  .brand-area.brand-area-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 24, 48, 0.95);
+    content: '';
+    z-index: -1; }

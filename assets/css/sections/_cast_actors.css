@@ -1,0 +1,9 @@
+/*------------------------
+    Cast Actors
+-------------------------*/
+.cast-actors .cast-actor-slider-nav-area {
+  position: relative; }
+  .cast-actors .cast-actor-slider-nav-area .cast-slider-nav-inner div {
+    position: absolute;
+    right: 0;
+    top: 0; }

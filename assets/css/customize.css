@@ -1,0 +1,608 @@
+
+
+/*------- グラデーションの修正 -----------*/
+
+.header-area .header-bottom .header-bottom-inner .content ul li .now-playing-area .icon-play:after {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  background-image: -moz-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -webkit-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -ms-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  content: '';
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.header-area .header-bottom .header-bottom-inner .content ul li .now-playing-area .content .title {
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+  background: -webkit-linear-gradient(-25deg, #a18cd1 0%, #fbc2eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.header-area .header-bottom .header-bottom-inner .content ul li .boxed-btn {
+  background-image: -moz-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -webkit-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -ms-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  height: 60px;
+  padding: 0;
+  line-height: 60px;
+}
+
+.header-area .header-bottom .header-bottom-inner .content ul li .boxed-btn.blank {
+  background-image: unset;
+  -moz-border-image: -moz-linear-gradient(top, #a18cd1 0%, #fbc2eb 100%);
+  -webkit-border-image: -webkit-linear-gradient(top, #a18cd1 0%, #fbc2eb 100%);
+  -o-border-image: -o-linear-gradient(top, #a18cd1 0%, #fbc2eb 100%);
+  border-image: -webkit-gradient(linear, left top, left bottom, from(#a18cd1), to(#fbc2eb));
+  border-image: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
+  background-clip: padding-box;
+  border-image-slice: 1;
+  color: rgba(255, 255, 255, 0.8);
+  width: 200px;
+  height: 60px;
+  position: relative;
+  z-index: 0;
+}
+
+.header-area .header-bottom .header-bottom-inner .content ul li .boxed-btn.blank:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: -moz-linear-gradient(50deg, #a18cd1 0%,#fbc2eb 100%);
+  background-image: -webkit-linear-gradient(50deg, #a18cd1 0%,#fbc2eb 100%);
+  background-image: -ms-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  content: '';
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  height: 61px;
+}
+
+.base-color {
+  color: #fbc2eb;
+}
+
+.section-title .separator {
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: #a18cd1;
+  margin-bottom: 16px;
+}
+
+.section-inner-title:after {
+  position: absolute;
+  left: -50px;
+  bottom: 0px;
+  width: 100px;
+  height: 2px;
+  background-color: #a18cd1;
+  content: '';
+}
+
+.movie-credits .left-content-area .bottom-content ul li .title:after {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  background-color: #a18cd1;
+  width: 10px;
+  height: 2px;
+  content: '';
+}
+
+.movie-credits .left-content-area .bottom-content:after {
+  position: absolute;
+  right: -50px;
+  bottom: 0px;
+  width: 100px;
+  height: 2px;
+  background-color: #a18cd1;
+  content: '';
+}
+
+.watch-movie-trailer .now-playing-area .icon-play:after {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  background-image: -moz-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -webkit-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -ms-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  content: '';
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.watch-movie-trailer .now-playing-area .content .subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(-25deg, #a18cd1 0%, #fbc2eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.single-cast-actor .hover h4 {
+  font-size: 16px;
+  color: #a18cd1;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.single-cast-actor .hover h4 .actor {
+  padding-left: 15px;
+  color: #fbc2eb;
+}
+
+.countdown-area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  background-image: -moz-linear-gradient(50deg, rgba(161, 140, 140, 0.2) 0%, rgba(251, 194, 194, 0.2) 100%);
+  background-image: -webkit-linear-gradient(50deg, rgba(161, 140, 140, 0.2) 0%, rgba(251, 194, 194, 0.2) 100%);
+  background-image: -ms-linear-gradient(50deg, rgba(161, 140, 140, 0.2) 0%, rgba(251, 194, 194, 0.2) 100%);
+}
+
+.countdown-area ul li {
+  display: inline-block;
+  width: 20%;
+  border: 1px solid rgba(251, 194, 194, 0.4);
+  border-right: none;
+}
+
+.countdown-area .btn-wrapper .boxed-btn {
+  letter-spacing: 2px;
+  width: 200px;
+  border-radius: 5px;
+  height: 60px;
+  line-height: 60px;
+  font-family: "Poppins", sans-serif;
+  background-image: -moz-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -webkit-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -ms-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.nav-container .btn-wrapper .boxed-btn,
+.footer-top .btn-wrapper .boxed-btn{
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  background-image: -moz-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -webkit-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -ms-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.image-gallery-area .image-gallery-inner .image-gallery-nav ul li {
+  display: inline-block;
+  width: 200px;
+  border: 1px solid #fbc2eb;
+  margin: 0 10px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.press-review-area .press-review-carousel .single-carousel-item .top-content .content .content-inner .designation {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fbc2eb;
+}
+
+.press-review-area .press-review-carousel .single-carousel-item .bottom-content p {
+  font-size: 26px;
+  line-height: 36px;
+  font-style: italic;
+  background: -webkit-linear-gradient(-25deg, #a18cd1 0%, #fbc2eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-area .footer-top .subscribe-form .submit-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 180px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 60px;
+  background-image: -moz-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -webkit-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -ms-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #fbc2eb;
+  color: #fff;
+  text-align: center;
+  line-height: 58px;
+  border-radius: 50%;
+  z-index: 99;
+  font-size: 25px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: none;
+  background-image: -moz-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -webkit-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -ms-linear-gradient(50deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.back-to-top i {
+  -ms-transform: initial;
+  -webkit-transform: initial;
+  transform: initial;
+}
+
+.movie-credits .left-content-area .bottom-content ul li .details {
+  color: #fbc2eb;
+}
+
+
+/*------- ヒーローイメージの修正 -----------*/
+
+.header-area .single-carousel-item .slider-bg:after,
+.watch-movie-trailer.watch-trailer-bg:after,
+.brand-area.brand-area-bg:after,
+.release-area.release-bg:after,
+.breadcrumb-area:after  {
+  background-color: initial;
+}
+
+.section-title p {
+  max-width: initial;
+}
+
+
+/*------- バックグラウンドイメージの修正 -----------*/
+
+.movie-credits .right-content-area .movie-poster {
+  background-image: url(../img/movie-poster2.jpg);
+}
+
+
+.watch-movie-trailer.watch-trailer-bg {
+  background-image: url(../img/bg/movie-trailer-bg2.jpg);
+}
+
+.brand-area .section-title {
+  text-align: center;
+}
+
+.brand-area.brand-area-bg {
+  background-image: url(../img/bg/brand-area-bg2.jpg);
+}
+
+.release-area.release-bg {
+  background-image: url(../img/bg/realease-bg2.jpg);
+}
+
+.a-mention {
+  color:white;
+}
+
+.breadcrumb-area {
+  background-image: url(../img/bg/breacrumb-bg2.jpg);
+}
+
+/*------- テキストの修正 -----------*/
+
+.single-blog-item .title {
+  font-size: 18px;
+}
+
+/*------- 写真のサイズ対応 -----------*/
+
+.trimming {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-top: 56.25%;
+  }
+
+.photo {
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+object-fit: cover;
+}
+
+/*------- タイトルのサイズ対応 -----------*/
+
+.single-blog-item .title{
+ min-height: 38px;
+ display:-webkit-box;
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp: 2;
+ overflow: hidden;
+}
+
+.single-blog-item p {
+  min-height: 38px;
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+
+/*------- パン耳リスト対応 -----------*/
+
+.breadcrumb-area2 {
+  padding: 150px 0 152px 0;
+  background-image: url(../img/bg/breacrumb-bg3.jpg);
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+  background-position: center; 
+}
+
+.breadcrumb-area2:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: -1; 
+}
+
+.breadcrumb-area2.extra {
+  padding-bottom: 157px; 
+}
+
+.breadcrumb-area2 .title {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 12px; 
+}
+
+.breadcrumb-area2 .page-list {
+  margin: 0;
+  padding: 0; 
+}
+
+.breadcrumb-area2 .page-list li {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7); 
+}
+
+.breadcrumb-area2 .page-list li:first-child {
+  padding-left: 0; 
+}
+
+  .breadcrumb-area2 .page-list li:first-child:after {
+  display: none; 
+}
+
+.breadcrumb-area2 .page-list li:after {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900; 
+}
+
+  .breadcrumb-area2 .page-list li a {
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; 
+}
+
+  .breadcrumb-area2 .page-list li a:hover {
+  color: #fff; 
+}
+
+body{
+  background-color: #101830;
+}
+
+
+/*------- ボタン対応 -----------*/
+
+.widget-area .submit-btn,
+.indi-deal-button .submit-btn {
+  border: none;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.widget-area .submit-btn:hover,
+.indi-deal-button .submit-btn:hover {
+  background-color: #fff;
+  color: #f9b18c; }
+
+.widget-area .submit-btn,
+.indi-deal-button .submit-btn {
+  height: initial;
+}
+
+.indi-deal-button {
+  text-align: center;
+}
+
+/*------- ディテールページ対応 -----------*/
+.blog-details-page-content-area {
+  padding: 40px 0 120px 0;
+}
+
+/*------- コメントサムネイル対応 -----------*/
+.blog-details-page-content-area .blog-details-content .entry-comment .comment-list li .single-comment-item .thumb img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.navbar-nav img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contact-form .form-inline .submit-btn {
+width: 100%;
+}
+
+
+/*------- ファイル選択対応 -----------*/
+
+.custom-file-input:lang(ja) ~ .custom-file-label::after {
+  content: "参照";
+}
+
+.custom-file {
+  max-width: 20rem;
+  overflow: hidden;
+}
+
+.custom-file-label {
+  white-space: nowrap;
+}
+
+.custom-file-label {
+  background-color: initial;
+}
+
+.custom-file-label::after {
+border-radius: initial;
+}
+
+
+.indi-deal-item:hover .hover {
+  visibility: visible;
+  opacity: 1;
+  -ms-transform: scaleX(1);
+  /* IE 9 */
+  -webkit-transform: scaleX(1);
+  /* Chrome, Safari, Opera */
+  transform: scaleX(1); 
+}
+
+.indi-deal-item .hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(16, 24, 48, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -ms-transform: scaleX(0);
+  /* IE 9 */
+  -webkit-transform: scaleX(0);
+  /* Chrome, Safari, Opera */
+  transform: scaleX(0); 
+}
+
+.indi-deal-item .hover ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center; 
+}
+
+.indi-deal-item .hover ul li {
+  display: inline-block;
+  margin: 0 3px; 
+}
+
+.indi-deal-item .hover ul li:first-child {
+  margin-left: 0; 
+}
+
+.indi-deal-item .hover ul li:last-child {
+  margin-right: 0; 
+}
+
+.indi-deal-item .hover ul li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
+  color: #f9b18c;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; 
+}
+
+.indi-deal-item .hover ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #f9b18c; 
+}

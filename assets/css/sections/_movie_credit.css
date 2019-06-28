@@ -1,0 +1,13 @@
+/*---------------------------
+    Movie Credit Area
+---------------------------*/
+.movie-credits .left-content-area .bottom-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .movie-credits .left-content-area .bottom-content ul li {
+    display: block; }
+
+.section-inner-title p {
+  font-size: 16px;
+  line-height: 26px; }

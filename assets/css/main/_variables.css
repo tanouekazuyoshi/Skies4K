@@ -1,0 +1,15 @@
+/*-----------------
+    @Typography
+-----------------*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@font-face {
+  font-family: 'D-DIN Condensed';
+  src: url("../fonts/D-DINCondensed.woff2") format("woff2"), url("../fonts/D-DINCondensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'D-DIN Condensed';
+  src: url("../fonts/D-DINCondensed-Bold.woff2") format("woff2"), url("../fonts/D-DINCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }

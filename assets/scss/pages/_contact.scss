@@ -1,0 +1,43 @@
+/*-----------------------
+    Contact Page
+------------------------*/
+.google-map{
+    #map{
+        min-height: 600px;
+    }
+}
+.contact-page-content-area{
+    padding: 110px 0 120px 0;
+}
+.contact-form{
+    .form-group{
+        .form-control{
+            height: 60px;
+            background-color: transparent;
+            border: 1px solid rgba($white,.5);
+            color: rgba($white,.8);
+        }
+        &.textarea{
+            .form-control{
+                min-height: 190px;
+                resize: none;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    .submit-btn{
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        @include transition($transition);
+        &:hover{
+            background-color: $white;
+            color: $base-color
+        }
+    }
+}

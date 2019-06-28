@@ -1,0 +1,237 @@
+/*------------------------
+    Blog Details
+-------------------------*/
+.blog-details-page-content-area{
+    padding: 120px 0 120px 0;
+    .blog-details-content{
+        .thumb{
+            margin-bottom: 23px;
+        }
+        .title{
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 5px;
+            font-weight: 400;
+            font-family: $body-font;
+            color: rgba($white,.8);
+        }
+        .post-meta{
+            margin: 0;
+            padding: 0;
+            margin-bottom: 20px;
+            li{
+                display: inline-block;
+                font-size: 14px;
+                color: $descr-color;
+                margin: 0 8px;
+                &:first-child{
+                    margin-left: 0;
+                }
+                a{
+                    color: $descr-color;
+                }
+            }
+        }
+        .entry-content{
+            p{
+                color: $descr-color;
+                font-size: 16px;
+                line-height: 26px;
+            }
+            .blockquote{
+                background-color: $base-color;
+                border-radius: 5px;
+                padding: 25px 30px 22px 30px;
+                p{
+                    color: $white;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+                .author-name{
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $white;
+                    font-weight: 700;
+                }
+            }
+        }
+        .entry-footer{
+            margin: 27px 0 21px 0;
+            .title{
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 400;
+                color: rgba($white,.8);
+            }
+            .left-content{
+                display: inline-block;
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        display: inline-block;
+                        margin: 0 8px;
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                        a{
+                            display: block;
+                            padding: 5px 15px;
+                            border: 1px solid rgba($white,.3);
+                            font-size: 14px;
+                            border-radius: 3px;
+                            color: $descr-color;
+                            @include transition($transition);
+                            &:hover{
+                                background-color: $base-color;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            .right-content{
+                display: inline-block;
+                float: right;
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        display: inline-block;
+                        margin: 0 5px;
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                        a{
+                            font-size: 14px;
+                            color: $descr-color;
+                            @include transition($transition);
+                            &:hover{
+                                color: $base-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .entry-comment{
+            margin-top: 38px;
+            .title{
+                font-size: 24px;
+                line-height: 34px;
+                margin-bottom: 26px;
+                font-weight: 400;
+            }
+            .comment-list{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li{
+                    margin-bottom: 27px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    .single-comment-item{
+                        position: relative;
+                        min-height: 80px;
+                        &.reply{
+                            margin-left: 50px;
+                        }
+                        .thumb{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 80px;
+                            img{
+                                border-radius: 50%;
+                            }
+                        }
+                        .content{
+                            position: relative;
+                            padding-left: 100px;
+                            .reply{
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                color: $descr-color;
+                                a{
+                                    color: $descr-color;
+                                    @include transition($transition);
+                                    &:hover{
+                                        color:$base-color;
+                                    }
+                                }
+                               
+                            }
+                            .name{
+                                font-size: 18px;
+                                line-height: 28px;
+                                margin-bottom: 0;
+                                font-family: $body-font;
+                                color: rgba($white,.8);
+                            }
+                            .time{
+                                font-size: 14px;
+                                display: block;
+                                margin-bottom: 15px;
+                            }
+                            p{
+                                font-size: 16px;
+                                line-height: 26px;
+                                color: $descr-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .comment-form-area{
+            margin-top: 28px;
+            .title{
+                font-size: 24px;
+                line-height: 34px;
+                margin-bottom: 20px;
+            }
+            .comments-entry-form{
+                .form-group{
+                    .form-control{
+                        height: 50px;
+                        width: 100%;
+                        border: 1px solid rgba($white,.1);
+                        @include placeholder-color($descr-color);
+                        padding: 0 20px;
+                        font-size: 14px;
+                        background-color: transparent;
+                        color: rgba($white,.8);
+                    }
+                    &.textarea{
+                        textarea{
+                            min-height: 130px;
+                            padding: 20px;
+                            resize: none;
+                            &:focus{
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+                .submit-btn{
+                    width: 190px;
+                    height: 50px;
+                    border: none;
+                    border-radius: 3px;
+                    @include transition($transition);
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $white;
+                        color: $base-color;
+                    }
+                }
+            }
+        }
+    }
+}

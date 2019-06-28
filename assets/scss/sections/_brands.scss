@@ -1,0 +1,51 @@
+/*-----------------------
+    Brands Area
+------------------------*/
+.brand-area{
+    padding: 120px 0 120px 0;
+    &.brand-area-bg{
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../img/bg/brand-area-bg.jpg);
+        z-index: 0;
+        &:after{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#101830,.95);
+            content: '';
+            z-index: -1;
+        }
+    }
+    .brand-wrap{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        li{
+            width: 25%;
+            background-color: rgba($white,.2);
+            border: 1px solid #1C243B;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 200px;
+            @include transition($transition);
+            cursor: pointer;
+            img{
+                @include transition($transition);
+            }
+            &:hover{
+                background-color: transparent;
+                img{
+                    @include transform(rotateY(360deg));
+                }
+            }
+        }
+    }
+}

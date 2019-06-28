@@ -1,0 +1,76 @@
+
+/*
+--------------------------
+	Css Indexing
+==========================
+	Table of Css Content
+--------------------------
+** @typography
+--------------------------
+** Global style
+--------------------------
+** Breadcumb Area
+-------------------------- 
+** Preloader
+--------------------------
+** Normalize
+--------------------------
+** Navbar Area
+--------------------------
+** Header Area
+--------------------------
+** Movie Credit Area
+--------------------------
+** Watch Trailer Area
+--------------------------
+** Cast Actors Area
+--------------------------
+** Release Area
+--------------------------
+** Image Gallery Area
+--------------------------
+** Brand Area
+--------------------------
+** Press Review Area
+--------------------------
+** Sidebar Area
+--------------------------
+** Footer Area
+--------------------------
+** About Page
+--------------------------
+** Gallery Page
+--------------------------
+** Blog Page
+--------------------------
+** Blog Details Page
+--------------------------
+** Faq Page
+--------------------------
+** Contact Page
+--------------------------
+
+*/
+
+@import "main/_variables";
+@import "main/_mixins";
+@import "main/_global";
+@import "main/_normalize";
+//=Section scss
+@import "sections/_navbar";
+@import "sections/_header";
+@import "sections/_movie_credit";
+@import "sections/_watch_trailer";
+@import "sections/_cast_actors";
+@import "sections/_release";
+@import "sections/_image_gallery";
+@import "sections/_brands";
+@import "sections/_press_review";
+@import "sections/_sidebar";
+@import "sections/_footer";
+@import "pages/_about";
+@import "pages/_gallery";
+@import "pages/_blog";
+@import "pages/_blog_details";
+@import "pages/_faq";
+@import "pages/_contact";

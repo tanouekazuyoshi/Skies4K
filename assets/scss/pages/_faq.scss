@@ -1,0 +1,63 @@
+/*----------------------------
+    Faq Page 
+   
+----------------------------*/
+.faq-area{
+    padding: 110px 0 120px 0;
+}
+.accordion-wrapper{
+    .card{
+        border: none;
+        background-color: transparent;
+        &:last-child{
+            .card-header{
+                a{
+                    margin-bottom: 0;
+                }
+            }
+            .card-body{
+                margin-bottom: 0;
+            }
+        }
+        .card-header{
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            a{
+                background-color: #1F1D3A;
+                display: block;
+                font-size: 18px;
+                line-height: 28px;
+                color: rgba($white,.8);
+                font-weight: 400;
+                position: relative;
+                margin-bottom: 20px;
+                padding: 15px 30px 15px 55px;
+                cursor: pointer;
+                &:after{
+                    position: absolute;
+                    left: 20px;
+                    top: 15px;
+                    @include fontawesomeIcon("\f067");
+                    @include transition($transition);
+                    font-size: 16px;
+                }
+                &[aria-expanded="true"]{
+                    padding: 15px 30px 7px 55px;
+                    margin-bottom: 0;
+                    &:after{
+                        @include fontawesomeIcon("\f068");
+                    }
+                }
+            }
+        }
+        .card-body{
+            background-color: #1F1D3A;
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 26px;
+            color: rgba($white,.6);
+            padding: 15px 30px 20px 55px;
+        }
+    }
+}

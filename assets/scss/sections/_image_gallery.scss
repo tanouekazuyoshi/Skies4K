@@ -1,0 +1,69 @@
+/*---------------------------
+    Image Gallery Area
+---------------------------*/
+.image-gallery-area{
+    padding: 110px 0 120px 0;
+    .section-title{
+        margin-bottom: 50px;
+    }
+    .image-gallery-inner{
+        position: relative;
+        .image-gallery-carousel{}
+        .image-gallery-nav{
+            position: absolute;
+            left: 0;
+            bottom: 45px;
+            width: 100%;
+            z-index: 1;
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-align: center;
+                li{
+                    display: inline-block;
+                    width: 200px;
+                    border: 1px solid $base-color;
+                    margin: 0 10px;
+                    @include transition($transition);
+                    cursor: pointer;
+                    &.active{
+                        @include transform(scale(1.2));
+                    }
+                }
+            }
+        }
+        .image-gallery-bottom{
+            background-color: #1f1d3a;
+            height: 90px;
+            position: relative;
+            .image-gallery-carousel-navigation{
+                div{
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    width: 40px;
+                    height: 50px;
+                    background-color: #2a2944;
+                    text-align: center;
+                    line-height: 55px;
+                    cursor: pointer;
+                    border-radius: 2px;
+                    @include transform(translateY(-50%));
+                    z-index: 2;
+                    &:hover{
+                        color: $white;
+                        background-image: -moz-linear-gradient( 50deg, rgb(174,63,107) 0%, rgb(212,120,124) 55%, rgb(249,177,140) 100%);
+                        background-image: -webkit-linear-gradient( 50deg, rgb(174,63,107) 0%, rgb(212,120,124) 55%, rgb(249,177,140) 100%);
+                        background-image: -ms-linear-gradient( 50deg, rgb(174,63,107) 0%, rgb(212,120,124) 55%, rgb(249,177,140) 100%);
+                    }
+                    &.owl-next{
+                        left: auto;
+                        right: 20px;
+                    }
+                }
+            }
+            
+        }
+    }
+}

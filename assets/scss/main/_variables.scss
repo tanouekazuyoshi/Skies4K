@@ -1,0 +1,68 @@
+
+//== Template Main Color
+$base-color: #f9b18c;
+$secondary-color: #101830;
+$bg-color:#f7f7f7;
+$white: #fff; 
+$sbg-1:#f7f7f7 ;
+$sbg-2:#19206e;
+//== heading color
+$heading-color: #313131;
+$descr-color: #777777;
+
+//==gradient color
+
+$left:#ae3f6b;
+$right:#f9b18c;
+$danger : #dc3545;
+
+//== social media colors
+
+$facebook: #0069f7;
+$twitter: #00c6f7;
+$dribbble: #f7007a;
+$behance: #bd8a00;
+$google-plus: #d1062c;
+
+
+/*-----------------
+    @Typography
+-----------------*/
+@font-face {
+    font-family: 'D-DIN Condensed';
+    src: url('../fonts/D-DINCondensed.woff2') format('woff2'),
+        url('../fonts/D-DINCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-DIN Condensed';
+    src: url('../fonts/D-DINCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/D-DINCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+$body-font: 'Poppins', sans-serif;
+$heading-font: 'D-DIN Condensed', sans-serif;
+
+
+
+//== font sizes
+$base-font-size: 16px !default;
+$font-size-h1: 60px !default;
+$font-size-h2: 52px !default;
+$font-size-h3: 26px !default;
+$font-size-h4: 22px !default;
+//** Unit-less `line-height` for use in components like buttons.
+$line-height: 1.6 !default; // 24/15
+// border-radius
+$border-radius-5: 5px !default;
+$border-radius-25: 25px !default;
+$border-radius-3: 3px !default;
+$border-radius-circle: 50% !default;
+//  transition
+$transition: all .3s ease-in;
+$transition-long: all .5s ease-in;
