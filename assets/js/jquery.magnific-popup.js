@@ -1566,6 +1566,7 @@ var IFRAME_NS = 'iframe',
 		}
 	};
 
+
 $.magnificPopup.registerModule(IFRAME_NS, {
 
 	options: {
@@ -1646,7 +1647,6 @@ $.magnificPopup.registerModule(IFRAME_NS, {
 		}
 	}
 });
-
 
 
 /*>>iframe*/
