@@ -648,3 +648,53 @@ border-radius: initial;
   width: 50px;
   height: 50px;
 }
+
+
+/*------- Thanksページ群対応 -----------*/
+
+#thanks .section-title .title {
+  font-size: 38px;
+}
+
+#thanks .section-title .sub-title {
+  font-size: 1.5rem;
+}
+
+#thanks .section-title .text {
+  font-size: 1.2rem;
+  line-height: normal;
+}
+
+.realperson-challenge {
+  padding: 2.5rem 0 2rem 0;
+}
+
+.realperson-challenge .realperson-text {
+  font-weight: initial;
+  letter-spacing: -3px;
+  color: white;
+}
+
+.realperson-challenge .realperson-regen {
+  color: white;
+}
+
+#thanks .new-password-wrap{
+  text-align: center;
+}
+
+#thanks .new-password-wrap .new-password{
+  padding: 2rem 2rem;
+  background-color: #f9b18c;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+#thanks .new-password-wrap .new-password-return a{
+  color: white;
+}
+
+#thanks .contact-form .form-group textarea.form-control {
+  height: initial;
+}

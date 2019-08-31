@@ -323,6 +323,13 @@ $('.reset').click(function(){
     $('#preview').remove('');
 })
 
+//パスワードリセット
+
+$(document).ready(function()	{
+	$('#realperson-check').realperson();
+});
+
+
 
 
 }(jQuery));	
