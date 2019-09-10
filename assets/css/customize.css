@@ -698,3 +698,21 @@ border-radius: initial;
 #thanks .contact-form .form-group textarea.form-control {
   height: initial;
 }
+
+.month-fee {
+  background-color: initial;
+  border: none;
+  padding: 1rem;
+}
+
+.footer-area .card .footer-logo,
+.contact-page-inner .card .footer-logo {
+  margin-bottom: initial;
+}
+
+.footer-area .card .card-body .card-title,
+.footer-area .card .card-body .card-text,
+.contact-page-inner .card .card-body .card-title,
+.contact-page-inner .card .card-body .card-text {
+  color: white;
+}
