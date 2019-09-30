@@ -409,6 +409,9 @@ body{
 .blog-details-page-content-area {
   padding: 40px 0 120px 0;
 }
+.video-player-video {
+  padding: 1rem 0 0;
+}
 
 /*------- コメントサムネイル対応 -----------*/
 .blog-details-page-content-area .blog-details-content .entry-comment .comment-list li .single-comment-item .thumb img {
@@ -715,4 +718,30 @@ border-radius: initial;
 .contact-page-inner .card .card-body .card-title,
 .contact-page-inner .card .card-body .card-text {
   color: white;
+}
+
+
+/*------- 個別契約 -----------*/
+.indi-deal-button p {
+  margin-top: 12px;
+  color: white;
+}
+.indi-deal-button p a {
+  color: #fbc2eb;
+}
+#indi-deal-thanks .breadcrumb-area.extra {
+  padding: 7rem 0 5rem;
+}
+.thanks-wrap{
+  padding: 3rem 0;
+}
+.thanks-wrap h5 {
+  color: white;
+  font-size: 22px;
+}
+.thanks-wrap p {
+  color: white;
+}
+.thanks-wrap p a {
+  color: #fbc2eb;
 }
