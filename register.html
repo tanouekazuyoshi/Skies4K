@@ -105,7 +105,7 @@
                         <!-- section title -->
                         <h4 class="title">Sign <span class="base-color">UP</span></h4>
                         <span class="separator center"></span>
-                        <p>新規登録の方はこちらから必要項目を記入し送信ボタンを押してください。すでにアカウントをお持ちの方は<a href="login.html"
+                        <p>新規登録の方はこちらから必要項目を記入し決済プロセスへお進みください。すでにアカウントをお持ちの方は<a href="login.html"
                                 class="a-mention">こちら</a>からログインしてください。
                         </p>
                     </div><!-- //. section title -->
@@ -141,7 +141,7 @@
                                             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                                     </div>
                                 </div>
-                                <div class="col-lg-12">
+                                <div class="d-none col-lg-12">
                                     <div class="card month-fee mt-4">
                                         <div class="row align-items-center no-gutters">
                                             <div class="col-md-5">
@@ -159,7 +159,10 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-12 mt-5">
+                                    <!--
                                     <button class="submit-btn" type="submit">登録情報を送信する</button>
+                                    -->
+                                    <a class="btn submit-btn" href="stripe.html" role="button">決済プロセスへ進む</a>
                                 </div>
                             </div>
 

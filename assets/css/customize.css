@@ -405,6 +405,10 @@ body{
   text-align: center;
 }
 
+.contact-form .submit-btn {
+  line-height: 50px;
+}
+
 /*------- ディテールページ対応 -----------*/
 .blog-details-page-content-area {
   padding: 40px 0 120px 0;
